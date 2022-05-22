@@ -3,8 +3,9 @@ package hellogo_test
 import (
 	"testing"
 
-	"github.com/golang-learning/hellogo"
 	"github.com/stretchr/testify/require"
+
+	"github.com/golang-learning/hellogo"
 )
 
 func TestHello(t *testing.T) {

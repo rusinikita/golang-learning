@@ -7,11 +7,12 @@
 Short bio and motivation in learning golang.
 
 # Learned lessons
-
-### hellogo - 100.0%
-Package hellogo contains first steps in language.
+{{range .}}
+### {{.Package}} - {{.TestCoverage}}
+{{.Description}}{{range .Functions}}
 <details>
-  <summary><code>func Hello() string</code></summary>
-
-    Hello is first function.
+  <summary><code>{{.Interface}}</code></summary>
+{{range .DocLines}}
+    {{.}}{{end}}
 </details>
+{{end}}{{end}}
